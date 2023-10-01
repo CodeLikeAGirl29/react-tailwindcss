@@ -19,8 +19,7 @@
     "start": "npm run watch:css && craco start",
     "build": "npm run watch:css && craco build",
     "test": "craco test --env=jsdom",
-    "eject": "craco eject",
-    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
+    "eject": "craco eject"
   },
   "engines": {
     "node": "18.x"
