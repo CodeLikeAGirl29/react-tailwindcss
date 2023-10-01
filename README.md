@@ -1,7 +1,6 @@
-
 # Galaxy Ventures
 
-Galaxy Ventures Project with Tailwind is a web application designed to simplify and enhance the process of creating and managing blogs. It leverages the power of React with Tailwind CSS to deliver a modern and user-friendly blogging platform.
+Galaxy Ventures is a multi-page React project with Tailwind is a web application designed to simplify and enhance the process of creating and managing blogs. It leverages the power of React with Tailwind CSS to deliver a modern and user-friendly blogging platform.
 
 ### Key Features:
 
