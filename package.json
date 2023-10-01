@@ -16,8 +16,8 @@
     "react-social-icons": "^6.4.0"
   },
   "scripts": {
-    "start": "npm run watch:css && craco start",
-    "build": "npm run watch:css && craco build",
+    "start": "craco start",
+    "build": "craco build",
     "test": "craco test --env=jsdom",
     "eject": "craco eject"
   },
