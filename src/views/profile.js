@@ -4,10 +4,11 @@ import { Helmet } from 'react-helmet'
 
 import HeaderFull from '../components/header-full'
 import OutlineBlueButton from '../components/outline-blue-button'
+import OutlineBlackButton from '../components/outline-black-button'
 import NextButton from '../components/next-button'
 import BlogCard from '../components/blog-card'
 import PrimaryPinkButton from '../components/primary-pink-button'
-import Footer from '../components/footer'
+import FooterAlt from '../components/footerAlt'
 import './profile.css'
 
 const Profile = (props) => {
@@ -40,9 +41,9 @@ const Profile = (props) => {
             </span>
           </div>
           <span className="Medium">
-          Dr. Apollo is a renowned astronaut whose dedication to exploring the cosmos has taken him on an extraordinary journey beyond our planet. Born on June 12, 1980, in Houston, Texas, Max's fascination with the cosmos ignited during his childhood, gazing at the night sky and dreaming of the stars.
+            Dr. Apollo is a renowned astronaut whose dedication to exploring the cosmos has taken him on an extraordinary journey beyond our planet. Born on June 12, 1980, in Houston, Texas, Max's fascination with the cosmos ignited during his childhood, gazing at the night sky and dreaming of the stars.
           </span>
-          <NextButton button="More about me"></NextButton>
+          <OutlineBlackButton button="More about me"></OutlineBlackButton>
         </div>
       </div>
       <div className="profile-blog-posts">
@@ -52,29 +53,29 @@ const Profile = (props) => {
           <br></br>
         </h1>
         <div className="profile-container04">
-          <BlogCard></BlogCard>
+          <BlogCard title="Galaxies: The Cosmic Neighborhoods" image_src="https://res.cloudinary.com/codelikeagirl29/image/upload/v1695958874/samples/nasa-rocket_j4mpve.png" description="Imagine our universe as a metropolis of lights, with galaxies serving as neighborhoods. Each galaxy is a self-contained city, bustling with stars, planets, and a myriad of cosmic inhabitants. Our very own Milky Way is but one of billions of galaxies populating the cosmic landscape."></BlogCard>
           <BlogCard
+            title="Our Place in the Cosmic Story"
             image_src="https://res.cloudinary.com/codelikeagirl29/image/upload/v1695952187/samples/telescope-sky_s6tr5s.png"
-            description="The Astronaut's Logbook: Exploring Space and Beyond"
+            description="As we ponder the grandeur of galaxies, we're reminded of our place in the universe. We are made of stardust, born from the fusion of elements within the hearts of massive stars. Our quest to understand galaxies and their mysteries is a profound journey of self-discovery, an exploration of the very origins of our existence."
           ></BlogCard>
           <BlogCard
-            title="MateLabs machine learning"
-            image_src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/color-wall.jpg"
+            title="The Astronaut's Logbook: Exploring Space and Beyond"
+            image_src="https://res.cloudinary.com/codelikeagirl29/image/upload/v1696361914/samples/astronaut-logbook_gihawg.png"
             description="If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with"
           ></BlogCard>
           <div className="profile-container05">
             <div className="profile-card">
               <div className="profile-container06">
-                <h1 className="profile-text14">Flexible work hours</h1>
+                <h1 className="profile-text02">How do they choose an astronaut?</h1>
                 <span className="profile-text15">
                   <span className="profile-text16">
-                    Rather than worrying about switching offices every couple
-                    years, you stay in the same place.
+                    Highly competitive & only the best go on to actually be an astronaut. They endurer multiple stages throughout their training. Do you have what it takes?
                   </span>
                 </span>
                 <div className="profile-container07">
                   <button className="profile-button button">
-                    <span className="profile-text14">Read more</span>
+                    <span className="profile-text14">Find out</span>
                     <svg viewBox="0 0 1024 1024" className="profile-icon">
                       <path d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"></path>
                     </svg>
@@ -90,7 +91,7 @@ const Profile = (props) => {
         <div className="profile-container09">
           <div className="profile-form">
             <h2 className="profile-text18 HeadingOne">
-              <span>Say Hi!</span>
+              <span>Apply Here:</span>
             </h2>
             <span className="profile-text20 Lead">
               We&apos;d like to talk with you.
@@ -99,27 +100,27 @@ const Profile = (props) => {
               <label className="profile-text21 Label">My name is</label>
               <input
                 type="text"
-                placeholder="Full Name"
+                placeholder="Your Name"
                 className="profile-textinput Small input"
               />
               <label className="profile-text22 Label">
-                I&apos;m looking for
+                I&apos;m looking to
               </label>
               <input
                 type="text"
-                placeholder="What you love"
+                placeholder="learn more about becoming an astronaut"
                 className="profile-textinput1 Small input"
               />
               <label className="profile-text23 Label">Your message</label>
               <textarea
                 rows="8"
-                placeholder="I want to say that..."
+                placeholder="Why do you want to be an astronaut?"
                 className="profile-textarea textarea Small"
               ></textarea>
             </form>
             <div className="profile-container10">
               <div className="profile-container11">
-                <PrimaryPinkButton button="send message"></PrimaryPinkButton>
+                <PrimaryPinkButton button="send it"></PrimaryPinkButton>
               </div>
             </div>
           </div>
@@ -137,7 +138,7 @@ const Profile = (props) => {
                 <span>Information</span>
               </h3>
               <span className="profile-text27">
-               🚀 Fill out this form with your inquiries & someone will contact you asap.
+                🚀 Fill out this form with your inquiries & someone will contact you asap.
               </span>
               <div className="profile-container13">
                 <div className="profile-container14">
@@ -145,7 +146,7 @@ const Profile = (props) => {
                     <path d="M742 460l-94-94q-18-18-10-44 24-72 24-152 0-18 12-30t30-12h150q18 0 30 12t12 30q0 300-213 513t-513 213q-18 0-30-12t-12-30v-150q0-18 12-30t30-12q80 0 152-24 24-10 44 10l94 94q186-96 282-282z"></path>
                   </svg>
                   <a href="tel:8886246272" className="profile-link Small">
-                    (888) 624 - NASA(6272)
+                    (888)624-NASA(6272)
                   </a>
                 </div>
                 <div className="profile-container15">
@@ -200,7 +201,7 @@ const Profile = (props) => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
+      <FooterAlt></FooterAlt>
     </div>
   )
 }

@@ -1,6 +1,9 @@
+const withMT = require("@material-tailwind/react/utils/withMT");
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [],
+module.exports = withMT({
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
@@ -989,5 +992,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
-
+});

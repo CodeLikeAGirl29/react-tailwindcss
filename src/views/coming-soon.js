@@ -19,11 +19,11 @@ const ComingSoon = (props) => {
         <div className="coming-soon-main">
           <div className="coming-soon-container2">
             <h1 className="coming-soon-text HeadingOne">You Work With</h1>
-            <h1 className="coming-soon-text1">Soft Design System</h1>
+            <h1 className="coming-soon-text1">Astronauts</h1>
             <p className="coming-soon-text2 Lead">
               <span className="coming-soon-text3">
-                The time is now for it be okay to be great. Subscribe now and
-                get notified when it&apos;s launched!
+                The time is now! Subscribe to our newsletter and
+                get notified when it&apos;s launched! Spots are filling up fast!
               </span>
             </p>
             <div className="coming-soon-container3">

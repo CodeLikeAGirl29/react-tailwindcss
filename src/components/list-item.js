@@ -7,7 +7,7 @@ import './list-item.css'
 const ListItem = (props) => {
   return (
     <div className="list-item-container">
-      <h5 className="list-item-text HeadingThree">{props.new_prop}</h5>
+      <h5 className="list-item-text HeadingThree">{props.title}</h5>
       <span>{props.description}</span>
     </div>
   )
@@ -15,13 +15,11 @@ const ListItem = (props) => {
 
 ListItem.defaultProps = {
   description:
-    'Gain access to the demographics, psychographics, and location of unique people who are interested and talk about your brand.',
-  new_prop: '1. Listen to Social Conversations',
+    'Gain access to the demographics, psychographics, and location of unique people who are interested and talk about your brand.'
 }
 
 ListItem.propTypes = {
-  description: PropTypes.string,
-  new_prop: PropTypes.string,
+  description: PropTypes.string
 }
 
 export default ListItem

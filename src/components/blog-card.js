@@ -2,7 +2,7 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import NextButton from './next-button'
+import OutlineGrayButton from "./outline-gray-button"
 import './blog-card.css'
 
 const BlogCard = (props) => {
@@ -13,9 +13,9 @@ const BlogCard = (props) => {
         src={props.image_src}
         className="blog-card-image"
       />
-      <h5 className="blog-card-text">{props.new_prop}</h5>
+      <h5 className="blog-card-text">{props.title}</h5>
       <span>{props.description}</span>
-      <NextButton button="Read more"></NextButton>
+      <OutlineGrayButton button="Read more"></OutlineGrayButton>
     </div>
   )
 }
@@ -24,7 +24,6 @@ BlogCard.defaultProps = {
   image_alt: 'image',
   description:
     'Finding temporary housing for your dog should be as easy as renting an Airbnb. That’s the idea behind Rover',
-  new_prop: 'Rover raised $65 million',
   image_src:
     'https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/color-bags.jpg',
 }
@@ -32,7 +31,6 @@ BlogCard.defaultProps = {
 BlogCard.propTypes = {
   image_alt: PropTypes.string,
   description: PropTypes.string,
-  new_prop: PropTypes.string,
   image_src: PropTypes.string,
 }
 
